@@ -1,11 +1,18 @@
 .container {
-  height: 200vh; /* Asegúrate de que haya suficiente espacio de desplazamiento */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 150vh;
 }
 
 #scrollImage {
+  z-index: -1;
   width: 300px;
   height: auto;
   position: fixed;
+  top: 20px; 
+  left: 20px;
+  z-index: 1; 
 }
 
 body {
@@ -17,14 +24,16 @@ body {
 a {
   color: pink;
 }
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
 article {
-  margin-left: 324px;
   font-family: sans-serif;
   font-size: 32px;
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    font-size: 24px;
+    margin-top: 250px;
+  }
 }
