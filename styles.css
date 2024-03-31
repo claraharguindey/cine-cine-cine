@@ -1,0 +1,9 @@
+.container {
+  height: 200vh; /* Asegúrate de que haya suficiente espacio de desplazamiento */
+}
+
+#scrollImage {
+  width: 300px;
+  height: auto;
+  position: fixed;
+}
